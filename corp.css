@@ -1,0 +1,346 @@
+
+        /* Custom styling */
+        body {
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background: #FFFFFF;
+            font-family: 'Cabinet Grotesk','Roboto', 'Fractul' sans-serif, ;
+            width: 100vw;
+            height: 100vh;
+            /* top: -501px; */
+            gap: 0px;
+            opacity: 0px;
+            
+        }
+
+        .image-container{
+            position: absolute;
+            width: 150vw;
+            /* height: 278.38px; */
+            top: 127px;
+            left: -10px;
+            gap: 0px;
+            opacity: 0.4px;
+            z-index: -1;
+        }
+
+        .circle-container{
+            position: absolute;
+            top: 80%;
+            left: -10%; /* Only 30% of the circle visible */
+            transform: translateY(-50%); /* Center the circle vertically */
+            width: 300px; /* Circle width */
+            height: 300px; /* Circle height */
+            background: #04a2f7f6; /* Circle color */
+            border-radius: 50%; /* Makes it a circle */
+            filter: blur(300px); /* Apply blur effect */
+        }
+       
+        .navbar {
+            display: flex;
+            justify-content: space-between; /* Space items evenly, with first and last item at the edges */
+            align-items: center; /* Vertically center the items */
+            width: 100vw;
+            padding: 20px;
+            max-width: 1156px; /* Constrain width */
+            margin: 0 auto; /* Center the navbar */
+            background: #FFFFFF;
+            height: 113px;
+        }
+
+        .navbar-brand{
+            width: 77px;
+            height: 20px;
+            top: 50px;
+            margin-left: 50px; 
+            gap: 0px;
+            opacity: 0px;
+            font-family: Fractul;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-align: left;
+        }
+
+
+        .navbar .btn{
+            background: #003296;
+            padding: 10px 30px;
+        }
+
+        .container{
+            max-width: ;width: 1200px;
+        }
+           
+
+
+        /* Hero Section */
+
+        .hero-section {   
+            margin-top: -5px;
+            padding: 20px 20px 20px 60px;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-family: Cabinet Grotesk;
+            font-size: 57px;
+            font-weight: 800;
+            line-height: 64px;
+            letter-spacing: -0.25px;
+            text-align: center;
+
+            color: #000;
+            margin-bottom: 20px;
+        }
+        .hero-section h1 span {
+            background-image: linear-gradient(87.11deg, #003296 3.19%, #04A1F7 65.57%, #003296 123.05%);
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text; /* For other browsers */
+            color: transparent; /* Make the text transparent */
+        }
+        
+        .hero-section p {
+            font-size: 1.25rem;
+            color: #6c757d;
+            margin-bottom: 60px;
+        }
+        .hero-section .cta-btn {
+            background: #003296;
+            color: #fff;
+            font-size: 1rem;
+            padding: 15px 50px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 20px;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .how-it-works h2 {
+            font-family: Cabinet Grotesk;
+            font-family: Cabinet Grotesk;
+            font-size: 3rem;
+            font-weight: 800;
+            line-height: var(--DisplayLargeLineHeight);
+            letter-spacing: var(--DisplayLargeTracking);
+            color: #000;
+            margin-bottom: 50px;
+        }
+
+        .how-it-works h2 span{
+            background-image: linear-gradient(87.11deg, #003296 0%, #04A1F7 10.57%, #003296 123.05%);
+            -webkit-background-clip: text; /* For Safari */
+            background-clip: text; /* For other browsers */
+            color: transparent; /* Make the text transparent */  
+        }
+        /* .container-my-5 {
+            max-width: 1200px;
+          } */
+          .card {
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* This keeps content spaced, and image aligned to the bottom */
+          }
+      
+          .card:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+          }
+      
+          .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0px;
+            background-color: transparent !important;
+            border: none !important;
+            padding: 0 !important; 
+          }
+      
+          .card-title {
+            font-family: Fractul;
+            font-size: var(--HeadlineLargeSize);
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: var(--HeadlineLargeLineHeight);
+            letter-spacing: var(--HeadlineLargeTracking);
+            text-align: left;
+          }
+      
+          .icon {
+            font-family: 'Fractul', sans-serif;
+            font-size: 200px;
+            font-weight: 600;
+            line-height: 250px;
+            text-align: right;
+            border: none;
+            -webkit-text-stroke: 1px #007bff; /* Stroke width and color */
+            color: transparent; /* Remove fill color */
+            margin-top: -40px;
+            /* border-image-source: linear-gradient(163.48deg, #003296 9.41%, #04A1F7 128.77%); */
+            /* border-image-slice: 1; */
+          }
+      
+          .card-img {
+            width: 100%;
+            height: 250px;
+            /* margin-top: auto; Ensure the image stays at the bottom */
+          }
+
+
+        /* Who Can Apply Section */
+        .who-can-apply{
+            margin-top: -95px;
+            margin-left:40px;
+        }
+        .blue-card {
+            background: linear-gradient(163.48deg, #003296 9.41%, #04A1F7 128.77%);
+            color: white;
+            border-radius: 15px;
+            padding: 30px;
+            text-align: left;
+            max-width: 1100px;
+            margin-left: 15px;
+            margin-bottom: 70px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          }
+      
+          .blue-card h2 {
+            font-family: Cabinet Grotesk;
+            font-size: 2.7rem;
+            font-weight: 800;
+            line-height: var(--DisplayLargeLineHeight);
+            letter-spacing: var(--DisplayLargeTracking);
+            margin-top: 30px;
+            margin-left: 90px;
+            margin-bottom: 30px;
+          }
+
+          .apply .container-fluid{
+            display: flex;
+            justify-content: left;
+          }
+
+          .container-fluid img{
+            margin-top: 2px;
+            margin-left: 80px;
+            width: 28px;
+            Height: 28px;
+
+          }
+      
+          .blue-card p {
+            //styleName: M3/title/large;
+            font-family: var(--TitleLargeFont);
+            font-size: var(--TitleLargeSize);
+            font-weight: 400;
+            line-height: var(--TitleLargeLineHeight);
+            letter-spacing: var(--TitleLargeTracking);
+            text-align: left;
+            margin-left: -60px
+
+          }
+      
+          .blue-card img {
+            max-width: 330px;
+            margin-top: 5px;
+            margin-right: 80px;
+          }
+      
+          /* Button styling */
+          .btn-custom {
+            background-color: white;
+            color: #003296;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 4px;
+            border: none;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            margin-left: 70px;
+            margin-bottom: 20px;
+            padding: 10px 60px;
+          }
+      
+          .btn-custom:hover {
+            background-color: #f1f1f1;
+          }
+      
+          /* Flexbox for the card layout */
+          .blue-card .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+
+        /* Footer */
+        .footer {
+            display: flex;
+            justify-content: space-between; /* Space items evenly, with first and last item at the edges */
+            align-items: center; /* Vertically center the items */
+            padding: 20px;
+            max-width: 1156px; /*Constrain width */
+            /* margin: 70px 0px 30px 1; Center the navbar */
+            background: #FFFFFF;
+            height: 113px;
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .footer .logo {
+            width: 77px;
+            height: 20px;
+            gap: 0px;
+            opacity: 0px;
+            font-family: Fractul;
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0.25px;
+            text-align: left;
+            margin-left: 60px;
+        }
+
+        .footer .logo a{
+            color: #000000;
+        }
+
+        .footer .link{
+            gap: 30px;
+            opacity: 0px; 
+            margin-right: -20px;  
+
+        }
+
+        .footer .link a{
+            margin: 0 10px;
+            font-family: Cabinet Grotesk;
+            font-size: var(--TitleMediumSize);
+            font-weight: 500;
+            line-height: var(--TitleMediumLineHeight);
+            letter-spacing: var(--TitleMediumTracking);
+            text-align: left;
+            color: #000000;
+        }
+
+
+      
+
+        @media (max-width: 1024px) {
+            .circle-container {
+                width: 200px; /* Adjust circle size for medium screens */
+                height: 200px;
+                left: -20%; /* Adjust position to show more of the circle */
+                filter: blur(80px); /* Adjust blur for medium screens */
+            }
+        }

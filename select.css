@@ -1,0 +1,275 @@
+
+
+body {
+    padding: 20px;
+    position: relative;
+    background: #FFFFFF;
+    font-family: 'Cabinet Grotesk','Roboto', 'Fractul' sans-serif, ;
+    width: 100vw;
+    height: 100vh;
+    /* top: -501px; */
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space items evenly, with first and last item at the edges */
+    align-items: center; /* Vertically center the items */
+    width: 100vw;
+    padding: 20px;
+    max-width: 1156px; /* Constrain width */
+    margin: 0 auto; /* Center the navbar */
+    background: #FFFFFF;
+    height: 80px;
+}
+
+.navbar-brand{
+    width: 77px;
+    height: 20px;
+    margin-left: 50px; 
+    gap: 0px;
+    opacity: 0px;
+    font-family: Fractul;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    width: 435px;
+    height: 658px;
+    top: 10px;
+    gap: 0px;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hold{
+    margin-top: 50px;
+}
+
+  .step-links {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .step-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .wrap{
+    display: inline-block;
+  }
+
+  .step-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .step-links li p{
+    /* margin-top: -10px; */
+    font-family: Cabinet Grotesk;
+    font-size: var(--LabelMediumSize);
+    font-weight: 400;
+    line-height: var(--LabelMediumLineHeight);
+    letter-spacing: var(--LabelMediumTracking);
+    /* text-align: left; */
+
+  }
+
+  .step-links li.completed p {
+    color: #037A4E; /* Color for completed step */
+  }
+
+  .step-links li.in-progress p {
+    color:#003296;
+    ; /* Color for in-progress step */
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+.form-floating {
+width: Fixed (737px)px;
+height: Fixed (80px)px;
+top: 187px;
+/* left: 615px; */
+margin-top: 10px;
+margin-left: 20px;
+}
+
+.form-select{
+width: 600px;
+height: 70px;
+padding: 10px 24px 20px 24px;
+gap: 0px;
+background: #F7F7F7;
+border-radius: 12px;
+border: 1px 0px 0px 0px;
+border-color: rgba(0, 0, 0, 0.2); /* Lighter border color (faint) */
+justify: space-between;
+opacity: 0px;
+appearance: none;          /* Standard */
+-webkit-appearance: none;  /* Chrome, Safari, Edge */
+-moz-appearance: none;     /* Firefox */
+}
+
+.form-select option {
+    padding: 10px;
+    border-radius: 20px; 
+}
+
+
+.form-select:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Optional: Add a glow effect */
+    outline: none; /* Remove the default focus outline */
+}
+
+.form-select option:disabled{
+    color: gray;
+}
+
+
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: transparent; /* No background color */
+    border: 2px solid rgba(0, 0, 0, 0.486); /* Black border for the circle */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; /* Allow clicks to pass through */
+  }
+
+.custom-arrow::before {
+   content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid black; /* Creates the open "V" shape */
+  }
+
+  /* Position the custom arrow wrapper */
+  .input-group {
+    position: relative;
+  }
+
+  .open .custom-arrow {
+    transform: translateY(-50%) rotate(180deg); /* Arrow points up */
+}
+
+
+#phone-details {
+    margin-top: 220px;
+    margin-left: -570px;
+}
+
+.phone-details-container {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: stretch; /* Ensure cards stretch to the same height */
+    justify-content: flex-start; /* Align cards to the left */
+}
+
+.phone-card, .specs-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px; /* Adjust margin to have space between the cards */
+   height: 200px; Keep the width consistent for both cards
+    flex: 1; /* Make both cards grow equally */
+    min-height: 250px; /* Set a minimum height for both cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow on hover */
+}
+
+.phone-card button{
+margin-left: 22px;
+border-radius: 20px;
+padding: 10px 20px;
+background: #DCE5F6;
+border: 1px solid #7EA9FF;
+font-family: 'Cabinet Grotesk';
+font-size: 12px;
+font-weight: 500;
+line-height: var(--TitleMediumLineHeight);
+letter-spacing: var(--TitleMediumTracking);
+text-align: center;
+
+
+}
+
+.specs-card{
+    width: 334px;
+}
+
+.specs-card h4{
+font-family: 'Cabinet Grotesk';
+font-size: var(--HeadlineMediumSize);
+font-weight: 700;
+line-height: var(--HeadlineMediumLineHeight);
+letter-spacing: var(--HeadlineSmallTracking);
+text-align: left;
+color: #003296;
+;
+
+}
+
+.phone-card img {
+    border-radius: 10px;
+    width: 160px;
+    height: 160px;
+}
+
+#phone-specs {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+#phone-specs li {
+    margin: 5px 0;
+    font-family: 'Cabinet Grotesk';
+    font-size: 15px;
+}
+
+#phone-price {
+    /* margin-top: 20px; */
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background: #DCE5F6;
+    font-family: 'Cabinet Grotesk';
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+#phone-price:hover {
+    background-color: #0056b3;
+}
+
+/* Optional: Add hover effect to the cards */
+.phone-card:hover, .specs-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}

@@ -1,0 +1,139 @@
+body {
+    padding: 20px;
+    position: relative;
+    background: #FFFFFF;
+    font-family: 'Cabinet Grotesk','Roboto', 'Fractul' sans-serif, ;
+    width: 100vw;
+    height: 100vh;
+    /* top: -501px; */
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space items evenly, with first and last item at the edges */
+    align-items: center; /* Vertically center the items */
+    width: 100vw;
+    padding: 20px;
+    max-width: 1156px; /* Constrain width */
+    margin: 0 auto; /* Center the navbar */
+    background: #FFFFFF;
+    height: 80px;
+}
+
+.navbar-brand{
+    width: 77px;
+    height: 20px;
+    margin-left: 50px; 
+    gap: 0px;
+    opacity: 0px;
+    font-family: Fractul;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    width: 435px;
+    height: 658px;
+    top: 10px;
+    gap: 0px;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hold{
+    margin-top: 50px;
+}
+
+  .step-links {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .step-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .wrap{
+    display: inline-block;
+  }
+
+  .step-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .step-links li p{
+    /* margin-top: -10px; */
+    font-family: Cabinet Grotesk;
+    font-size: var(--LabelMediumSize);
+    font-weight: 400;
+    line-height: var(--LabelMediumLineHeight);
+    letter-spacing: var(--LabelMediumTracking);
+    /* text-align: left; */
+
+  }
+
+  .step-links li.completed p {
+    color: #037A4E; /* Color for completed step */
+  }
+
+  .step-links li.in-progress p {
+    color:#003296;
+    ; /* Color for in-progress step */
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .custom-card {
+    max-width: 500px;
+    margin: 11px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .custom-card .card-body h5 {
+    font-family: 'Cabinet Grotesk';
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: left !important; /* Added !important */
+  }
+  
+  .custom-card .card-body p {
+    font-family: 'Cabinet Grotesk';
+    font-size: 16px;
+    color: #6c757d;
+    text-align: left !important; /* Added !important */
+  }
+
+  .mb-3 label{
+    font-family: 'Cabinet Grotesk';
+  }
+
+  .form-control:disabled {
+    background-color: #f8f9fa;
+  }
+  .btn-primary {
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+  }

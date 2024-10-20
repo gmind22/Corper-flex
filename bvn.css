@@ -1,0 +1,150 @@
+body {
+    padding: 20px;
+    position: relative;
+    background: #FFFFFF;
+    font-family: 'Cabinet Grotesk','Roboto', 'Fractul' sans-serif, ;
+    width: 100vw;
+    height: 100vh;
+    /* top: -501px; */
+    gap: 0px;
+    opacity: 0px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Space items evenly, with first and last item at the edges */
+    align-items: center; /* Vertically center the items */
+    width: 100vw;
+    padding: 20px;
+    max-width: 1156px; /* Constrain width */
+    margin: 0 auto; /* Center the navbar */
+    background: #FFFFFF;
+    height: 80px;
+}
+
+.navbar-brand{
+    width: 77px;
+    height: 20px;
+    margin-left: 50px; 
+    gap: 0px;
+    opacity: 0px;
+    font-family: Fractul;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    text-align: left;
+}
+
+.container {
+    display: flex;
+}
+
+.card {
+    width: 435px;
+    height: 658px;
+    top: 10px;
+    gap: 0px;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0px;
+    box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
+}
+
+.hold{
+    margin-top: 50px;
+}
+
+  .step-links {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .step-links li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .wrap{
+    display: inline-block;
+  }
+
+  .step-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .step-links li p{
+    /* margin-top: -10px; */
+    font-family: Cabinet Grotesk;
+    font-size: var(--LabelMediumSize);
+    font-weight: 400;
+    line-height: var(--LabelMediumLineHeight);
+    letter-spacing: var(--LabelMediumTracking);
+    /* text-align: left; */
+
+  }
+
+  .step-links li.completed p {
+    color: #037A4E; /* Color for completed step */
+  }
+
+  .step-links li.in-progress p {
+    color:#003296;
+    ; /* Color for in-progress step */
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .custom-wrapper {
+    width: 100%;
+    position: relative;
+    margin-left: 70px;
+}
+
+.form-container {
+    margin-top: 10px;
+    margin-left: -150px;
+}
+
+h2 {
+    font-family: 'Cabinet Grotesk';
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: 'Cabinet Grotesk';
+    font-size: 20px;
+    color: #6c757d;
+  }
+  input[type="text"] {
+    border-radius: 8px;
+    padding: 25px 20px;
+    border: 1px solid #ced4da;
+    width: 100%;
+    font-family: 'Cabinet Grotesk';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-family: Cabinet Grotesk;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+
+  }
