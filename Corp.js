@@ -77,3 +77,48 @@ document.getElementById('bvn').addEventListener('keypress', function(event) {
         }
     }
 });
+
+ // Add event listener to the "Verify OTP" button
+ document.getElementById('verifyBtn').addEventListener('click', function() {
+    verifyOTP();
+});
+
+// Function to verify OTP
+function verifyOTP() {
+    var otp = document.getElementById("otpInput").value;
+    console.log("OTP Entered:", otp);  // Debugging line to check OTP input
+    
+    // Simulate OTP verification (Here, the correct OTP is 1234)
+    if (otp === "1234") {
+        console.log("Showing success modal");  // Debugging line for success modal
+        var successModal = new bootstrap.Modal(document.getElementById('successModal'), {
+            keyboard: false
+        });
+        successModal.show();  // Show success modal
+    } else {
+        console.log("Showing declined modal");  // Debugging line for declined modal
+        var declinedModal = new bootstrap.Modal(document.getElementById('declinedModal'), {
+            keyboard: false
+        });
+        declinedModal.show();  // Show declined modal
+    }
+}
+
+// Function to clear OTP and focus on retry
+document.getElementById('retryBtn').addEventListener('click', function() {
+    retryOTP();
+});
+
+function retryOTP() {
+    document.getElementById("otpInput").value = '';  // Clear the OTP input
+    document.getElementById("otpInput").focus();     // Focus back on OTP input
+}
+
+ // Add event listener to the trigger button
+ document.getElementById('triggerModalBtn').addEventListener('click', function() {
+    var successModal = new bootstrap.Modal(document.getElementById('successModal'), {
+        keyboard: false
+    });
+    successModal.show();  // Show success modal
+});
+

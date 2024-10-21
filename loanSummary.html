@@ -6,7 +6,7 @@
     <title>Corper-Flex</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="tellUs.css">
+    <link rel="stylesheet" href="summary.css">
     <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,68 +79,38 @@
             </div>
           </div>
         </div>
-    
-        <div class="custom-card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Tell us about yourself</h5>
-              <p class="text-center">We need to validate your information, for that we require some personal data.</p>
-              <form action="loanSummary.html" method="GET">
-                <div class="mb-3">
-                  <label for="bvn" class="form-label">Bank Verification Number (BVN)</label>
-                  <input type="text" class="form-control" id="bvn" placeholder="1234567890123">
+
+        <div class="container my-5">
+            <!-- Outer Card with smaller size -->
+            <div class="card custom-shadow smaller-card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Repayment Summary</h5>
+                    <p class="card-text text-muted">Here is a summary of your repayment details</p>
+                    
+                    <!-- Loan Details Section (Smaller and compact) -->
+                    <div class="p-3 mb-3 border rounded shadow-sm bg-light">
+                        <p class="mb-1"><strong>Amount:</strong> ₦216,000.00k</p>
+                        <p class="mb-1"><strong>Duration:</strong> 3 months</p>
+                        <p class="mb-1"><strong>Monthly repayment:</strong> ₦20,583.33</p>
+                        <p class="mb-1"><strong>Repayment Start Date:</strong> Saturday October 12, 2024</p>
+                        <p class="mb-1"><strong>Due date:</strong> Saturday January 12, 2025</p>
+                        <p class="mb-1"><strong>Interest per month:</strong> 7.5%</p>
+                    </div>
+        
+                    <!-- Buttons Section -->
+                    <div class="d-flex justify-content-between">
+                        <a href="index.html" class="btn btn-outline-secondary btn-sm">Cancel</a>
+                        <a href="otp.html" class="btn btn-primary btn-sm">Proceed</a>
+                    </div>
+                    
+                    <!-- Verified by Remita Text -->
+                    <p class="text-center mt-3 text-muted smaller-text">Verified by <span class="text-warning">remita</span></p>
                 </div>
-                <div class="mb-3">
-                  <label for="fullname" class="form-label">Full name</label>
-                  <input type="text" class="form-control" id="fullname" placeholder="John Doe">
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone number</label>
-                  <input type="text" class="form-control" id="phone" placeholder="+234 7031 879 3456">
-                </div>
-                <div class="mb-3">
-                  <label for="account" class="form-label">Account number</label>
-                  <input type="text" class="form-control" id="account" placeholder="2345678901">
-                </div>
-                <div class="mb-3">
-                  <label for="bankname" class="form-label">Bank Name</label>
-                  <select id="state"  class="form-control" placeholder="State of Deployment">
-                    <option value="">Choose...</option>
-                    <option value="us">Access Bank</option>
-                    <option value="uk">GTB</option>
-                    <option value="ca">UBA</option>
-                    <option value="au">Sterling Bank</option>
-                    <option value="ng">EcoBank</option>
-                    <option value="ng">Zenith Bank</option>
-                </select>
-                </div>
-                <div class="mb-3">
-                  <label for="state" class="form-label">Enter State of Deployment</label>
-                  <select id="state"  class="form-control" placeholder="State of Deployment">
-                    <option value="">Choose...</option>
-                    <option value="us">Abia</option>
-                    <option value="uk">Adamawa</option>
-                    <option value="ca">Akwa Ibom</option>
-                    <option value="au">Anambra</option>
-                    <option value="ng">Bauchi</option>
-                </select>
-                </div>
-                <form action="your-target-page.html" method="GET">
-        <div class="mb-3">
-            <label for="completionDate" class="form-label">Enter NYSC completion Date</label>
-            <input type="date" class="form-control" id="completionDate" placeholder="NYSC completion Date">
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Proceed to verify</button>
-    </form>
-    
-    <div class="text-center mt-3">
-        <small>Verified by Remita</small>
-    </div>
-</div>
-          </div>
-      
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
 </body>

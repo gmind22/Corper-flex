@@ -6,7 +6,7 @@
     <title>Corper-Flex</title>
     <!-- Bootstrap CSS CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="tellUs.css">
+    <link rel="stylesheet" href="summary.css">
     <link href="https://fonts.cdnfonts.com/css/cabinet-grotesk" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,68 +79,50 @@
             </div>
           </div>
         </div>
-    
-        <div class="custom-card">
-            <div class="card-body">
-              <h5 class="card-title text-center">Tell us about yourself</h5>
-              <p class="text-center">We need to validate your information, for that we require some personal data.</p>
-              <form action="loanSummary.html" method="GET">
-                <div class="mb-3">
-                  <label for="bvn" class="form-label">Bank Verification Number (BVN)</label>
-                  <input type="text" class="form-control" id="bvn" placeholder="1234567890123">
+
+        <div class="container my-5">
+            <!-- Outer Card with smaller size -->
+            <div class="card custom-shadow smaller-card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold">Pickup option</h5>
+                    <p class="card-text text-muted">We need to validate your information, for that we require some <br> personal data.</p>
+                    
+                    <!-- Loan Details Section (Smaller and compact) -->
+                    <form id="pickupForm">
+                        <div class="custom-radio-card" id="campCard">
+                            <input class="form-check-input" type="radio" name="pickupOption" id="campPickup" value="camp">
+                            <label class="form-check-label" for="campPickup">Camp pickup</label>
+                        </div>
+                
+                        <div id="campDropdown" class="form-group mt-2 hidden-input">
+                            <label for="campLocation">Select camp location</label>
+                            <select class="form-control" id="campLocation">
+                                <option value="">Choose...</option>
+                                <option value="camp1">Camp 1</option>
+                                <option value="camp2">Camp 2</option>
+                                <option value="camp3">Camp 3</option>
+                            </select>
+                        </div>
+                
+                        <div class="custom-radio-card" id="storeCard">
+                            <input class="form-check-input" type="radio" name="pickupOption" id="storePickup" value="store">
+                            <label class="form-check-label" for="storePickup">Store pickup</label>
+                        </div>
+                
+                        <div id="storeInput" class="form-group mt-2 hidden-input">
+                            <label for="storeAddress">Enter store address</label>
+                            <input type="text" class="form-control" id="storeAddress" placeholder="Store address">
+                        </div>
+                
+                        <button type="submit" class="btn btn-primary mt-3">Proceed to verify</button>
+                    </form>
                 </div>
-                <div class="mb-3">
-                  <label for="fullname" class="form-label">Full name</label>
-                  <input type="text" class="form-control" id="fullname" placeholder="John Doe">
-                </div>
-                <div class="mb-3">
-                  <label for="phone" class="form-label">Phone number</label>
-                  <input type="text" class="form-control" id="phone" placeholder="+234 7031 879 3456">
-                </div>
-                <div class="mb-3">
-                  <label for="account" class="form-label">Account number</label>
-                  <input type="text" class="form-control" id="account" placeholder="2345678901">
-                </div>
-                <div class="mb-3">
-                  <label for="bankname" class="form-label">Bank Name</label>
-                  <select id="state"  class="form-control" placeholder="State of Deployment">
-                    <option value="">Choose...</option>
-                    <option value="us">Access Bank</option>
-                    <option value="uk">GTB</option>
-                    <option value="ca">UBA</option>
-                    <option value="au">Sterling Bank</option>
-                    <option value="ng">EcoBank</option>
-                    <option value="ng">Zenith Bank</option>
-                </select>
-                </div>
-                <div class="mb-3">
-                  <label for="state" class="form-label">Enter State of Deployment</label>
-                  <select id="state"  class="form-control" placeholder="State of Deployment">
-                    <option value="">Choose...</option>
-                    <option value="us">Abia</option>
-                    <option value="uk">Adamawa</option>
-                    <option value="ca">Akwa Ibom</option>
-                    <option value="au">Anambra</option>
-                    <option value="ng">Bauchi</option>
-                </select>
-                </div>
-                <form action="your-target-page.html" method="GET">
-        <div class="mb-3">
-            <label for="completionDate" class="form-label">Enter NYSC completion Date</label>
-            <input type="date" class="form-control" id="completionDate" placeholder="NYSC completion Date">
+            </div>
         </div>
-        <button type="submit" class="btn btn-primary">Proceed to verify</button>
-    </form>
-    
-    <div class="text-center mt-3">
-        <small>Verified by Remita</small>
-    </div>
-</div>
-          </div>
-      
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
+
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-   
+    <script src="pick.js"></script>
 </body>

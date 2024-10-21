@@ -18,7 +18,7 @@
             position: absolute;
             width: 150vw;
             /* height: 278.38px; */
-            top: 127px;
+            top: 765px;
             left: -10px;
             gap: 0px;
             opacity: 0.4px;
@@ -69,6 +69,22 @@
             background: #003296;
             padding: 10px 30px;
         }
+
+        .image-card {
+          max-width: 1200px; /* Set the maximum width for the card */
+          width: 100%; /* Make it responsive to fit its container */
+          border-radius: 8px; /* Rounded corners for the card */
+          overflow: hidden; /* Ensures the image doesn't overflow the card */
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light box shadow for the card */
+          margin: 20px auto; /* Center the card horizontally */
+      }
+      
+      .image-card img {
+          width: 100%; /* The image takes up the full width of the card */
+          height: 100%; /* The image takes up the full height */
+          object-fit: cover; /* Ensures the image covers the entire div, cropping if necessary */
+          display: block; /* Removes any default inline spacing around the image */
+      }
 
         .container{
             max-width: ;width: 1200px;
