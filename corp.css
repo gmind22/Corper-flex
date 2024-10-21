@@ -49,19 +49,20 @@
             height: 113px;
         }
 
-        .navbar-brand{
-            width: 77px;
-            height: 20px;
-            top: 50px;
-            margin-left: 50px; 
-            gap: 0px;
-            opacity: 0px;
-            font-family: Fractul;
-            font-size: 32px;
-            font-weight: 400;
-            line-height: 20px;
-            letter-spacing: 0.25px;
-            text-align: left;
+        .navbar-brand img{
+          max-width: 100%; /* Ensure logo doesn't overflow */
+          max-height: 80px; /* Set a maximum height */
+          height: auto; /* Maintain aspect ratio */
+          width: auto; /* Allow width to scale accordingly */
+          object-fit: contain; /* Keep the aspect ratio */
+          display: block; /* Ensure no inline spacing around the image */
+        }
+      
+        .container-fluid {
+          display: flex; /* Make container a flexbox */
+          align-items: center; /* Vertically center items within the container */
+          width: 100%; /* Full width */
+          padding: 0; /* Remove default padding */
         }
 
 
@@ -313,9 +314,9 @@
             padding: 20px;
             text-align: center;
         }
-        .footer .logo {
+        .footer .logo img {
             width: 77px;
-            height: 20px;
+            height: 30px;
             gap: 0px;
             opacity: 0px;
             font-family: Fractul;

@@ -12,31 +12,40 @@ body {
     opacity: 0px;
   }
 
-  .navbar {
+ /* Navbar Styles */
+.navbar {
     display: flex;
-    justify-content: space-between; /* Space items evenly, with first and last item at the edges */
-    align-items: center; /* Vertically center the items */
-    width: 100vw;
-    padding: 20px;
-    max-width: 1156px; /* Constrain width */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Vertically center items */
+    width: 100vw; /* Full viewport width */
+    padding: 10px 20px; /* Adjust padding as needed */
+    max-width: 1156px; /* Constrain maximum width */
     margin: 0 auto; /* Center the navbar */
-    background: #FFFFFF;
-    height: 80px;
+    background: #FFFFFF; /* Background color */
+    height: 80px; /* Fixed height */
 }
 
-.navbar-brand{
-    width: 77px;
-    height: 20px;
-    margin-left: 50px; 
-    gap: 0px;
-    opacity: 0px;
-    font-family: Fractul;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.25px;
-    text-align: left;
+/* Logo Styles */
+.navbar-brand img {
+    max-width: 100%; /* Ensure logo doesn't overflow */
+    max-height: 60px; /* Set a maximum height */
+    height: auto; /* Maintain aspect ratio */
+    width: auto; /* Allow width to scale accordingly */
+    object-fit: contain; /* Keep the aspect ratio */
+    display: block; /* Ensure no inline spacing around the image */
 }
+
+/* Additional styles for the container to give space between logo and other content */
+.container-fluid {
+    display: flex; /* Make container a flexbox */
+    align-items: center; /* Vertically center items within the container */
+    width: 100%; /* Full width */
+    padding: 0; /* Remove default padding */
+}
+
+
+
+
 
 .container {
     display: flex;
