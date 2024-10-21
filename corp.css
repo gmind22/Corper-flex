@@ -38,32 +38,33 @@
         }
        
         .navbar {
-            display: flex;
-            justify-content: space-between; /* Space items evenly, with first and last item at the edges */
-            align-items: center; /* Vertically center the items */
-            width: 100vw;
-            padding: 20px;
-            max-width: 1156px; /* Constrain width */
-            margin: 0 auto; /* Center the navbar */
-            background: #FFFFFF;
-            height: 113px;
-        }
-
-        .navbar-brand img{
-          max-width: 100%; /* Ensure logo doesn't overflow */
-          max-height: 80px; /* Set a maximum height */
-          height: auto; /* Maintain aspect ratio */
-          width: auto; /* Allow width to scale accordingly */
-          object-fit: contain; /* Keep the aspect ratio */
-          display: block; /* Ensure no inline spacing around the image */
-        }
+          display: flex;
+          justify-content: space-between;
+          align-items: center; 
+          width: 100vw;
+          padding: 20px;
+          max-width: 1156px; 
+          margin: 0 auto; 
+          background: #FFFFFF;
+          height: 113px; 
+      }
       
-        .container-fluid {
-          display: flex; /* Make container a flexbox */
-          align-items: center; /* Vertically center items within the container */
-          width: 100%; /* Full width */
-          padding: 0; /* Remove default padding */
-        }
+      /* .navbar-brand img {
+          width: 150px; 
+          max-height: 80px; 
+          height: auto; 
+          object-fit: contain; 
+          display: block; 
+          margin-left: -40px;
+      } */
+      
+      .container-fluid {
+          display: flex; 
+          align-items: center; 
+          width: 100%; 
+          padding: 0; 
+      } 
+      
 
 
         .navbar .btn{
@@ -72,7 +73,7 @@
         }
 
         .image-card {
-          max-width: 1200px; /* Set the maximum width for the card */
+          max-width: 1156px; /* Set the maximum width for the card */
           width: 100%; /* Make it responsive to fit its container */
           border-radius: 8px; /* Rounded corners for the card */
           overflow: hidden; /* Ensures the image doesn't overflow the card */
