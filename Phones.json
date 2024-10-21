@@ -1,51 +1,47 @@
 {
     "phones": [
       {
-        "name": "Samsung A16",
+        "name": "Samsung Galaxy A05 4gb + 64gb",
         "image": "image 3.svg",
         "specs": {
-          "Display size": "6.7 inches",
-          "Dimensions": "164.4 x 77.9 x 7.9 mm",
-          "Memory": "8GB/256GB",
-          "Battery": "5000mAh",
-          "Weight": "200g",
-          "Price": "28,000,000"
+          "Display": "6.5 inches",
+          "Camera": "50 MP",
+          "Memory": "4GB/64GB",
+          "Battery": "Li-po, 5000mAh",
+          "Price": "127,000,000"
         }
       },
       {
-        "name": "Samsung S22",
+        "name": "Samsung Galaxy A05 4gb + 128gb",
         "image": "image 3.svg",
         "specs": {
-          "Display size": "6.1 inches",
-          "Dimensions": "146 x 70.6 x 7.6 mm",
-          "Memory": "8GB/128GB",
-          "Battery": "3700mAh",
-          "Weight": "167g",
-          "Price": "40,000,000"
+          "Display": "6.5 inches",
+          "Camera": "50 MP",
+          "Memory": "4GB/64GB",
+          "Battery": "Li-po, 5000mAh",
+          "Price": "211,000,000"
         }
       },
       {
-        "name": "Samsung S23",
+        "name": "Samsung Galaxy A15 4gb + 64gb",
         "image": "image 3.svg",
         "specs": {
-          "Display size": "6.1 inches",
-          "Dimensions": "146.3 x 70.9 x 7.6 mm",
-          "Memory": "8GB/256GB",
-          "Battery": "3900mAh",
-          "Weight": "168g",
-          "Price": "45,000,000"
+          "Display": "6.5 inches",
+          "Camera": "50 MP",
+          "Memory": "4GB/64GB",
+          "Battery": "Li-po, 5000mAh",
+          "Price": "240,500,000"
         }
       },
       {
-        "name": "Samsung S23 Ultra",
+        "name": "Samsung Galaxy A15 8gb + 128gb",
         "image": "image 3.svg",
         "specs": {
-          "Display size": "6.8 inches",
-          "Dimensions": "163.4 x 78.1 x 8.9 mm",
-          "Memory": "12GB/512GB",
-          "Battery": "5000mAh",
-          "Weight": "234g",
-          "Price": "75,000,000"
+         "Display": "6.5 inches",
+          "Camera": "50 MP",
+          "Memory": "4GB/64GB",
+          "Battery": "Li-po, 5000mAh",
+          "Price": "280,000,000"
         }
       }
     ]
